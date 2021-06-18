@@ -8,22 +8,21 @@ Author: Tek Jones
 
 Collection Interface which will consume a Sequelize Model and perform generic Database CRUD operations
 
-Deployed Links:
-  In Progress
+Deployed Links: https://tekjones-api-server.herokuapp.com/
 
 ## UML
 
-![CRUC API](./uml.png)
+![CRUC API](./uml-04.jpg)
 
 ## Routes
 
-### /dogs
+### /customers
 
 #### GET
 
 - Status Code 200
 - JSON response:
-  - Returns and array of `dogs` containing
+  - Returns and array of `customers` containing
     - breed: STRING
     - age: NUMBER
 
@@ -31,18 +30,18 @@ Deployed Links:
 
 - Status Code 200
 - JSON response:
-  - Creates a new `dogs` item
-  - Returns a newly created `dogs` item containing:
+  - Creates a new `customers` item
+  - Returns a newly created `customers` item containing:
     - breed: STRING
     - age: NUMBER
 
-### /dogs/:dogsId
+### /customers/:customersId
 
 #### GET
 
 - Status Code 200
 - JSON response:
-  - Returns a single instance `dogs` based on the `dogsId` containing:
+  - Returns a single instance `customers` based on the `customersId` containing:
     - breed: STRING
     - age: NUMBER
 
@@ -50,25 +49,25 @@ Deployed Links:
 
 - Status Code 200
 - JSON response:
-  - Updates a single instance of `dogs` based on the `dogsId`, returns newly updated item containing:
+  - Updates a single instance of `customers` based on the `customersId`, returns newly updated item containing:
     - breed: STRING
     - age: NUMBER
 
 #### DELETE
 
 - Status Code 204
-- Removes a single instance of `dogs` based on the `dogsId`, no body:
+- Removes a single instance of `customers` based on the `customersId`, no body:
 
 
 ---------------------------------------------
 
-### /songs
+### /receipts
 
 #### GET
 
 - Status Code 200
 - JSON response:
-  - Returns and array of `songs` containing
+  - Returns and array of `receipts` containing
     - name: STRING
     - year: NUMBER
 
@@ -76,18 +75,18 @@ Deployed Links:
 
 - Status Code 200
 - JSON response:
-  - Creates a new `songs` item
-  - Returns a newly created `songs` item containing:
+  - Creates a new `receipts` item
+  - Returns a newly created `receipts` item containing:
     - name: STRING
     - year: NUMBER
 
-### /dogs/:dogsId
+### /customers/:customersId
 
 #### GET
 
 - Status Code 200
 - JSON response:
-  - Returns a single instance `songs` based on the `songsId` containing:
+  - Returns a single instance `receipts` based on the `receiptsId` containing:
     - name: STRING
     - year: NUMBER
 
@@ -95,11 +94,11 @@ Deployed Links:
 
 - Status Code 200
 - JSON response:
-  - Updates a single instance of `songs` based on the `songsId`, returns newly updated item containing:
+  - Updates a single instance of `receipts` based on the `receiptsId`, returns newly updated item containing:
     - name: STRING
     - year: NUMBER
 
 #### DELETE
 
 - Status Code 204
-- Removes a single instance of `songs` based on the `songsId`, no body:
+- Removes a single instance of `receipts` based on the `receiptsId`, no body:

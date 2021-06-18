@@ -9,7 +9,7 @@ const receiptsModel = (sequelize, DataTypes) => {
     },
     customerId: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     }
   });
 }
